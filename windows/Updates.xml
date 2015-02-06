@@ -1,0 +1,85 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>com.microsoft.vcredist_2008</Name>
+  <DisplayName>Microsoft Visual C++ 2008 Redistributable Package (x86)</DisplayName>
+  <Description>The Microsoft Visual C++ 2008 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run applications developed with Visual C++ on a computer that does not have Visual C++ 2008 installed.</Description>
+  <Version>2008</Version>
+  <ReleaseDate>2007-11-29</ReleaseDate>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="1815916" OS="Any" UncompressedSize="1821232"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <Licenses>
+   <License name="MICROSOFT SOFTWARE LICENSE TERMS (2008)" file="License_2008.txt"/>
+  </Licenses>
+  <SHA1>a86d44125bf2362051968c840fbd20349f3049ee</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>com.microsoft.vcredist_2013</Name>
+  <DisplayName>Visual C++ Redistributable Packages for Visual Studio 2013</DisplayName>
+  <Description>The Visual C++ Redistributable Packages install run-time components that are required to run C++ applications that are built by using Visual Studio 2013.</Description>
+  <Version>12.0.21005</Version>
+  <ReleaseDate>2013-12-10</ReleaseDate>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="6283217" OS="Any" UncompressedSize="6498240"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <Licenses>
+   <License name="MICROSOFT SOFTWARE LICENSE TERMS (2013)" file="License_2013.txt"/>
+  </Licenses>
+  <SHA1>28e12fbf5e4f72a5b5563b3628b7b40a22ece09b</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>com.slproweb.openssl</Name>
+  <DisplayName>Win32 OpenSSL v1.0.1j Light</DisplayName>
+  <Description>Installs the most commonly used essentials of Win32 OpenSSL v1.0.1j (Recommended for brave users by the creators of OpenSSL). Note that this is a default build of OpenSSL and is subject to local and state laws. More information can be found in the legal agreement of the installation.</Description>
+  <Version>1.0.1</Version>
+  <ReleaseDate>2014-10-15</ReleaseDate>
+  <Dependencies>com.microsoft.vcredist_2008</Dependencies>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="1399221" OS="Any" UncompressedSize="2049738"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <Licenses>
+   <License name="Win32 OpenSSL License Agreement" file="License.txt"/>
+  </Licenses>
+  <SHA1>5b51cbf7f1ff33c9bdfb71eedb6cdf398afd5b4d</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>io.qt</Name>
+  <DisplayName>Qt</DisplayName>
+  <Description>Qt Components</Description>
+  <Version>5.4.0-1</Version>
+  <ReleaseDate>2014-12-10</ReleaseDate>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="24914150" OS="Any" UncompressedSize="76557126"/>
+  <DownloadableArchives>audio.7z,bearer.7z,iconengines.7z,imageformats.7z,mediaservice.7z,platforms.7z,playlistformats.7z,position.7z,printsupport.7z,sensorgestures.7z,sensors.7z,sqldrivers.7z,content.7z</DownloadableArchives>
+  <Licenses>
+   <License name="GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007" file="lgpl-3.0.txt"/>
+  </Licenses>
+  <SHA1>30082b40a90c49802c02b0d2a611bb02273cfa5e</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>org.gearlux.gdesktunes</Name>
+  <DisplayName>GDeskTunes</DisplayName>
+  <Description>Desktop Player for Google Play Music�</Description>
+  <Version>0.3.6</Version>
+  <ReleaseDate>2014-12-15</ReleaseDate>
+  <Dependencies>io.qt</Dependencies>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="282711" OS="Any" UncompressedSize="798653"/>
+  <DownloadableArchives>js.7z,userstyles.7z,content.7z</DownloadableArchives>
+  <UserInterfaces>targetwidget.ui</UserInterfaces>
+  <Licenses>
+   <License name="GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007" file="lgpl-3.0.txt"/>
+   <License name="The MIT License (MIT) - Radiant Player Mac" file="mit-radiant.txt"/>
+   <License name="The MIT License (MIT) - QtWaitingSpinner" file="mit-spinner.txt"/>
+  </Licenses>
+  <SHA1>c4983a29dc79710f68ad11bd0bc7f7b2455e9ccf</SHA1>
+ </PackageUpdate>
+</Updates>

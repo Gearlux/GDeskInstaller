@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Qt</DisplayName>
+    <Description>Qt Components</Description>
+    <Version>5.4.0-1</Version>
+    <ReleaseDate>2014-12-10</ReleaseDate>
+    <Name>io.qt</Name>
+    <Licenses>
+        <License name="GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007" file="lgpl-3.0.txt" />
+    </Licenses>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>
