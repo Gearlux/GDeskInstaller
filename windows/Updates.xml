@@ -72,7 +72,7 @@
   <Dependencies>io.qt</Dependencies>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="282711" OS="Any" UncompressedSize="798653"/>
+  <UpdateFile CompressedSize="285696" OS="Any" UncompressedSize="797629"/>
   <DownloadableArchives>js.7z,userstyles.7z,content.7z</DownloadableArchives>
   <UserInterfaces>targetwidget.ui</UserInterfaces>
   <Licenses>
@@ -80,6 +80,6 @@
    <License name="The MIT License (MIT) - Radiant Player Mac" file="mit-radiant.txt"/>
    <License name="The MIT License (MIT) - QtWaitingSpinner" file="mit-spinner.txt"/>
   </Licenses>
-  <SHA1>c4983a29dc79710f68ad11bd0bc7f7b2455e9ccf</SHA1>
+  <SHA1>7a8f4312cbe1a6c9f5838b9c29ee456c71881677</SHA1>
  </PackageUpdate>
 </Updates>

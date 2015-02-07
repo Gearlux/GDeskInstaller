@@ -69,13 +69,13 @@ rmdir /Q /S installer\packages\org.gearlux.gdesktunes\data
 mkdir installer\packages\org.gearlux.gdesktunes\data
 xcopy /S /Y GDeskTunes\* installer\packages\org.gearlux.gdesktunes\data
 
-del /Q GDeskTunesInstaller.exe
-del /Q GDeskSetup.exe
-rmdir /Q /S windows
+REM del /Q GDeskTunesInstaller.exe
+REM del /Q GDeskSetup.exe
+REM rmdir /Q /S windows
 
-%QTIFW%\bin\repogen.exe -p installer\packages windows
-%QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages GDeskTunesInstaller.exe
-%QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl,io.qt GDeskTunesSetup.exe
+%QTIFW%\bin\repogen.exe -p installer\packages --update -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl windows
+REM %QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages GDeskTunesInstaller.exe
+%QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl GDeskTunesSetup.exe
 
 move GDeskTunesInstaller.exe windows
 move GDeskTunesSetup.exe windows
