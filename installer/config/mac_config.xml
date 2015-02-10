@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>GDeskTunes</Name>
+    <Version>0.3</Version>
+    <Title>GDeskTunes Installer</Title>
+    <Publisher>Gearlux</Publisher>
+    <ProductUrl>http://gearlux.github.io/GDeskTunes/</ProductUrl>
+    <StartMenuDir>GDeskTunes</StartMenuDir>
+	<Logo>logo.png</Logo>
+	<Watermark>watermark.png</Watermark>
+    <RepositorySettingsPageVisible>false</RepositorySettingsPageVisible>
+    <TargetDir>@ApplicationsDir@</TargetDir>
+    <RunProgram>@TargetDir@/GDeskTunes.app</RunProgram>
+	<UninstallerName>GDeskMaintenance</UninstallerName>
+	<RemoteRepositories>
+		<Repository>
+			<Url>https://raw.githubusercontent.com/Gearlux/GDeskInstaller/master/macosx/</Url>
+		</Repository>
+	</RemoteRepositories>
+</Installer>
