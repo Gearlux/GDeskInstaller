@@ -41,7 +41,7 @@
 
 var Dir = new function () {
     this.toNativeSparator = function (path) {
-        if (installer.value("os") == "win")
+        if (installer.value("os") === "win")
             return path.replace(/\//g, '\\');
         return path;
     }
@@ -52,7 +52,7 @@ function Component()
 {
     component.loaded.connect(this, my_componentLoaded);
     installer.setDefaultPageVisible(QInstaller.TargetDirectory, false);
-    installer.setDefaultPageVisible(QInstaller.ReadyForInstallation, false);
+    installer.setDefaultPageVisible(QInstaller.ReadyForInstallation, true);
     installer.setDefaultPageVisible(QInstaller.ComponentSelection, true);
     // installer.setDefaultPageVisible(QInstaller.StartMenuSelection, false);
     // installer.setDefaultPageVisible(QInstaller.PerformInstallation, false);
@@ -66,7 +66,7 @@ my_componentLoaded = function()
 	if (installer.isInstaller()) {
         if (installer.addWizardPage(component, "TargetWidget", QInstaller.TargetDirectory)) {
             var widget = gui.pageWidgetByObjectName("DynamicTargetWidget");
-            if (widget != null) {
+            if (widget !== null) {
                 widget.targetDirectory.textChanged.connect(this, Component.prototype.targetChanged);
                 widget.targetChooser.clicked.connect(this, Component.prototype.chooseTarget);
 
@@ -78,6 +78,11 @@ my_componentLoaded = function()
                 widget.targetDirectory.text = Dir.toNativeSparator(installer.value("TargetDir"));
 
                 widget.labelWarning.visible = false;
+
+                if (installer.value("os") === "mac") {
+                    widget.desktopShortcut.visible = false;
+                }
+
             }
         }
 	}
@@ -99,13 +104,9 @@ Component.prototype.createOperations = function()
 				"workingDirectory=@TargetDir@");
             if (component.userInterface( "TargetWidget" ).desktopShortcut.checked)
             {
-                // IFW crashses on the second shortcut
-                // We will have to do it this way
                 component.addOperation("CreateShortcut", "@TargetDir@/GDeskTunes.exe", "@DesktopDir@/GDeskTunes.lnk", "workingDirectory=@TargetDir@");
-                // component.addOperation("Execute", "cmd", "/c" , "shortcut.bat", "\"@TargetDir@\\GDeskTunes.exe\"", "\"@DesktopDir@\\GDeskTunes.lnk\"", "workingDirectory=@TargetDir@");
             }
         }
-
 	} catch (e) {
         print(e);
     }
@@ -125,8 +126,8 @@ Component.prototype.chooseTarget = function () {
 
 Component.prototype.targetChanged = function (text) {
     var widget = gui.pageWidgetByObjectName("DynamicTargetWidget");
-    if (widget != null) {
-        if (text != "") {
+    if (widget !== null) {
+        if (text !== "") {
             widget.complete = true;
             installer.setValue("TargetDir", text);
             if (installer.fileExists(text + "/components.xml")) {

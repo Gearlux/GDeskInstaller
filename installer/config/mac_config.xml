@@ -6,10 +6,10 @@
     <Publisher>Gearlux</Publisher>
     <ProductUrl>http://gearlux.github.io/GDeskTunes/</ProductUrl>
     <StartMenuDir>GDeskTunes</StartMenuDir>
-	<Logo>logo.png</Logo>
-	<Watermark>watermark.png</Watermark>
+    <Logo>logo.png</Logo>
+    <Watermark>watermark.png</Watermark>
     <RepositorySettingsPageVisible>false</RepositorySettingsPageVisible>
-    <TargetDir>@ApplicationsDir@</TargetDir>
+    <TargetDir>@ApplicationsDir@/GDeskTunes</TargetDir>
     <RunProgram>@TargetDir@/GDeskTunes.app</RunProgram>
 	<UninstallerName>GDeskMaintenance</UninstallerName>
 	<RemoteRepositories>
