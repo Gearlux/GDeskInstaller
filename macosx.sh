@@ -45,9 +45,9 @@ cp -Ra GDeskTunes.app/Contents/Resources/qt.conf installer/packages/io.qt/data/G
 rm -rf installer/packages/org.gearlux.gdesktunes/data/*
 mkdir -p installer/packages/org.gearlux.gdesktunes/data
 cp -Ra GDeskTunes.app installer/packages/org.gearlux.gdesktunes/data/
-rm -rf installer/packages/org.gearlux.gdesktunes.data/Contents/Frameworks
-rm -rf installer/packages/org.gearlux.gdesktunes.data/Contents/PlugIns
-rm -f installer/packages/org.gearlux.gdesktunes.data/Contents/Resources/qt.conf
+rm -rf installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/Frameworks
+rm -rf installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/PlugIns
+rm -f installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/Resources/qt.conf
 
 rm -rf macosx
 rm -rf GDeskTunesSetup.app
