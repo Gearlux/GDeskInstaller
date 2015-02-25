@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
     <DisplayName>GDeskTunes</DisplayName>
-    <Description>Desktop Player for Google Play Music™</Description>
+    <Description>This is the core component of GDeskTunes.</Description>
     <Version>0.3.6</Version>
     <ReleaseDate>2014-12-15</ReleaseDate>
     <Name>org.gearlux.gdesktunes</Name>

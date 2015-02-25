@@ -45,12 +45,18 @@ cp -Ra GDeskTunes.app/Contents/Resources/qt.conf installer/packages/io.qt/data/G
 rm -rf installer/packages/org.gearlux.gdesktunes/data/*
 mkdir -p installer/packages/org.gearlux.gdesktunes/data
 cp -Ra GDeskTunes.app installer/packages/org.gearlux.gdesktunes/data/
-rm -rf installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/Frameworks
-rm -rf installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/PlugIns
-rm -f installer/packages/org.gearlux.gdesktunes.data/GDeskTunes.app/Contents/Resources/qt.conf
+rm -rf installer/packages/org.gearlux.gdesktunes/data/GDeskTunes.app/Contents/Frameworks
+rm -rf installer/packages/org.gearlux.gdesktunes/data/GDeskTunes.app/Contents/PlugIns
+rm -f installer/packages/org.gearlux.gdesktunes/data/GDeskTunes.app/Contents/Resources/qt.conf
 
 rm -rf macosx
 rm -rf GDeskTunesSetup.app
 ~/Qt/QtIFW-1.5.0/bin/repogen -e com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl -p installer/packages macosx
-~/Qt/QtIFW-1.5.0/bin/binarycreator -c installer/config/mac_config.xml -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl -p installer/packages GDeskTunesSetup.app
-cp -a qt_menu.nib GDeskTunesSetup.app/Contents/Resources
+~/Qt/QtIFW-1.5.0/bin/binarycreator --offline-only -c installer/config/mac_config.xml -e com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl -p installer/packages GDeskInstaller.app
+~/Qt/QtIFW-1.5.0/bin/binarycreator -c installer/config/mac_config.xml -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl -p installer/packages GDeskSetup.app
+cp -a qt_menu.nib GDeskSetup.app/Contents/Resources
+cp -a qt_menu.nib GDeskInstaller.app/Contents/Resources
+
+#rm -f GDeskSetup.zip
+#zip -r GDeskSetup.zip GDeskSetup.app
+#rm -rf GDeskSetup.app
