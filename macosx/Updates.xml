@@ -10,23 +10,23 @@
   <ReleaseDate>2014-12-10</ReleaseDate>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="15785615" OS="Any" UncompressedSize="65620829"/>
+  <UpdateFile CompressedSize="15785602" OS="Any" UncompressedSize="65620829"/>
   <DownloadableArchives>GDeskTunes.app.7z</DownloadableArchives>
   <Licenses>
    <License name="GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007" file="lgpl-3.0.txt"/>
   </Licenses>
-  <SHA1>be20812f575ebe79fdec0fa844452e50fc34494a</SHA1>
+  <SHA1>6c31dd45c4f698960e526e7d0f732b1c95833c39</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>org.gearlux.gdesktunes</Name>
   <DisplayName>GDeskTunes</DisplayName>
-  <Description>Desktop Player for Google Play Music�</Description>
+  <Description>This is the core component of GDeskTunes.</Description>
   <Version>0.3.6</Version>
   <ReleaseDate>2014-12-15</ReleaseDate>
   <Dependencies>io.qt</Dependencies>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="16933854" OS="Any" UncompressedSize="67999022"/>
+  <UpdateFile CompressedSize="1160156" OS="Any" UncompressedSize="2378233"/>
   <DownloadableArchives>GDeskTunes.app.7z</DownloadableArchives>
   <UserInterfaces>targetwidget.ui</UserInterfaces>
   <Licenses>
@@ -34,6 +34,6 @@
    <License name="The MIT License (MIT) - Radiant Player Mac" file="mit-radiant.txt"/>
    <License name="The MIT License (MIT) - QtWaitingSpinner" file="mit-spinner.txt"/>
   </Licenses>
-  <SHA1>f094dd165b360751508cd8af5c685004affaf25b</SHA1>
+  <SHA1>28f5221343c009e773fe551a2e7a2e11d16e5b48</SHA1>
  </PackageUpdate>
 </Updates>
