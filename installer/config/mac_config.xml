@@ -18,9 +18,11 @@
     <RunProgram>open</RunProgram>
     <RunProgramArguments>@TargetDir@/GDeskTunes.app</RunProgramArguments>
 	<UninstallerName>GDeskMaintenance</UninstallerName>
+	<!--
 	<RemoteRepositories>
 		<Repository>
 			<Url>https://raw.githubusercontent.com/Gearlux/GDeskInstaller/master/macosx/</Url>
 		</Repository>
 	</RemoteRepositories>
+	-->
 </Installer>
