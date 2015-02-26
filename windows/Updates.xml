@@ -66,13 +66,13 @@
  <PackageUpdate>
   <Name>org.gearlux.gdesktunes</Name>
   <DisplayName>GDeskTunes</DisplayName>
-  <Description>Desktop Player for Google Play Music�</Description>
+  <Description>This is the core component of GDeskTunes.</Description>
   <Version>0.3.6</Version>
   <ReleaseDate>2014-12-15</ReleaseDate>
   <Dependencies>io.qt</Dependencies>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="285493" OS="Any" UncompressedSize="797629"/>
+  <UpdateFile CompressedSize="292656" OS="Any" UncompressedSize="823771"/>
   <DownloadableArchives>js.7z,userstyles.7z,content.7z</DownloadableArchives>
   <UserInterfaces>targetwidget.ui</UserInterfaces>
   <Licenses>
@@ -80,6 +80,6 @@
    <License name="The MIT License (MIT) - Radiant Player Mac" file="mit-radiant.txt"/>
    <License name="The MIT License (MIT) - QtWaitingSpinner" file="mit-spinner.txt"/>
   </Licenses>
-  <SHA1>dbd7948829c6ed0025889e06e00be0526eef2fde</SHA1>
+  <SHA1>326e3b0f233859bc52f0c7144d98a7c385c3c9a0</SHA1>
  </PackageUpdate>
 </Updates>
