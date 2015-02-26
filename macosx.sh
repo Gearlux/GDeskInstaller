@@ -58,5 +58,5 @@ cp -a qt_menu.nib GDeskSetup.app/Contents/Resources
 cp -a qt_menu.nib GDeskInstaller.app/Contents/Resources
 
 rm -f GDeskInstaller.zip
-zip -r GDeskInstaller.zip GDeskInstaller.app
+zip -r GDeskInstaller_MacOSX.zip GDeskInstaller.app
 #rm -rf GDeskSetup.app
