@@ -57,6 +57,6 @@ rm -rf GDeskTunesSetup.app
 cp -a qt_menu.nib GDeskSetup.app/Contents/Resources
 cp -a qt_menu.nib GDeskInstaller.app/Contents/Resources
 
-#rm -f GDeskSetup.zip
-#zip -r GDeskSetup.zip GDeskSetup.app
+rm -f GDeskInstaller.zip
+zip -r GDeskInstaller.zip GDeskInstaller.app
 #rm -rf GDeskSetup.app
