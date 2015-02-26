@@ -74,8 +74,8 @@ REM del /Q GDeskSetup.exe
 REM rmdir /Q /S windows
 
 %QTIFW%\bin\repogen.exe -p installer\packages --update -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl windows
-REM %QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages GDeskTunesInstaller.exe
-%QTIFW%\bin\binarycreator.exe -c installer\config\windows_config.xml -p installer\packages -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl GDeskTunesSetup.exe
+REM %QTIFW%\bin\binarycreator.exe -c installer\config\config.xml -p installer\packages GDeskInstaller.exe
+%QTIFW%\bin\binarycreator.exe -c installer\config\windows_config.xml -p installer\packages -e io.qt,com.microsoft.vcredist_2008,com.microsoft.vcredist_2013,com.slproweb.openssl GDeskSetup.exe
 
 REM move GDeskTunesInstaller.exe windows
-move GDeskTunesSetup.exe windows
+move GDeskSetup.exe windows

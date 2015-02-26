@@ -10,12 +10,12 @@
   <ReleaseDate>2014-12-10</ReleaseDate>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="15785602" OS="Any" UncompressedSize="65620829"/>
+  <UpdateFile CompressedSize="15785582" OS="Any" UncompressedSize="65620829"/>
   <DownloadableArchives>GDeskTunes.app.7z</DownloadableArchives>
   <Licenses>
    <License name="GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007" file="lgpl-3.0.txt"/>
   </Licenses>
-  <SHA1>6c31dd45c4f698960e526e7d0f732b1c95833c39</SHA1>
+  <SHA1>b897a427db0f1c4f7cde7ded14f8063ad93d1d6a</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>org.gearlux.gdesktunes</Name>
@@ -26,7 +26,7 @@
   <Dependencies>io.qt</Dependencies>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="1160156" OS="Any" UncompressedSize="2378233"/>
+  <UpdateFile CompressedSize="1160159" OS="Any" UncompressedSize="2378233"/>
   <DownloadableArchives>GDeskTunes.app.7z</DownloadableArchives>
   <UserInterfaces>targetwidget.ui</UserInterfaces>
   <Licenses>
@@ -34,6 +34,6 @@
    <License name="The MIT License (MIT) - Radiant Player Mac" file="mit-radiant.txt"/>
    <License name="The MIT License (MIT) - QtWaitingSpinner" file="mit-spinner.txt"/>
   </Licenses>
-  <SHA1>28f5221343c009e773fe551a2e7a2e11d16e5b48</SHA1>
+  <SHA1>3d4265ba978a542b1b4ba856f1abc1eef38e8491</SHA1>
  </PackageUpdate>
 </Updates>
