@@ -50,7 +50,7 @@ del /S GDeskTunesTmp\GDeskTunes.exe
 
 rmdir /Q /S installer\packages\io.qt\data
 mkdir installer\packages\io.qt\data
-xcopy /S /Y GDeskTunes\* installer\packages\io.qt\data
+xcopy /S /Y GDeskTunesTmp\* installer\packages\io.qt\data
 
 REM Create GDeskTunes program
 rmdir /S /Q GDeskTunesTmp
